@@ -275,25 +275,25 @@ div:hover:not(:hover) {
 }
 
 
-.curiosidades {
+.projetos {
 	max-width: 960px;
 	margin: 60px auto;
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.curiosidades-item {
+.projetos-item {
 	flex: 1 1 300px;
 	margin: 20px 10px;
 }
 
-.curiosidades-item h2 {
+.projetos-item h2 {
 	font-size: 2.25em;
 	color: #a4a4a4;
 	margin-bottom: 20px;
 }
 
-.curiosidades-item h2::before {
+.projetos-item h2::before {
 	content: '';
 	display: inline-block;
 	width: 8px;
@@ -301,19 +301,19 @@ div:hover:not(:hover) {
 	margin-right: 10px;
 }
 
-.curiosidades-item:nth-of-type(3n+1) h2::before {
+.projetos-item:nth-of-type(3n+1) h2::before {
 	background: #ae81ff;
 }
 
-.curiosidades-item:nth-of-type(3n+2) h2::before {
+.projetos-item:nth-of-type(3n+2) h2::before {
 	background: #f9265e;
 }
 
-.curiosidades-item:nth-of-type(3n+3) h2::before {
+.projetos-item:nth-of-type(3n+3) h2::before {
 	background: #66d9eb;
 }
 
-.curiosidades-item p {
+.projetos-item p {
 	font-size: 1.25em;
 	line-height: 1.4;
 	color: #7c7c7c;

@@ -1,31 +1,3 @@
-const menuItem = document.querySelectorAll('.menu-nav a[href^="#"]');
-
-menuItem.forEach((item) => {
-    item.addEventListener('click', scrollToIdOnClick)
-})
-
-function getScrollTopByHref(element) {
-  const id = element.getAttribute('href');
-  return document.querySelector(id).offsetTop;
-}
-
-function scrollToIdOnClick(event) {
-  event.preventDefault()
-  const to = getScrollTopByHref(event.target);
-  
-  scrollToPosition(to);
-}
-
-function scrollToPosition(to) {
-    smoothScrollTo(0, to);
-}
-
-/**
- * Smooth scroll animation
- * @param {int} endX: destination x coordinate
- * @param {int} endY: destination y coordinate
- * @param {int} duration: animation duration in ms
- */
 function smoothScrollTo(endX, endY, duration) {
     const startX = window.scrollX || window.pageXOffset;
     const startY = window.scrollY || window.pageYOffset;
